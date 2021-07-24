@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.newPlayerNameController">
+   <children>
+      <TextField fx:id="textField" layoutX="324.0" layoutY="100.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="348.0" layoutY="33.0" prefHeight="57.0" prefWidth="151.0" text="Enter Player Name">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterButton" layoutX="524.0" layoutY="100.0" mnemonicParsing="false" onAction="#enterAction" text="Enter" />
+      <TableView fx:id="table" layoutX="34.0" layoutY="159.0" prefHeight="320.0" prefWidth="779.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="125.60000228881836" text="Name" />
+            <TableColumn fx:id="country" prefWidth="105.60005187988281" text="Country" />
+            <TableColumn fx:id="age" prefWidth="60.79998779296875" text="Age" />
+            <TableColumn fx:id="height" prefWidth="56.7999267578125" text="Height" />
+            <TableColumn fx:id="clubName" prefWidth="141.60003662109375" text="Club" />
+            <TableColumn fx:id="position" prefWidth="89.5999755859375" text="Position" />
+            <TableColumn fx:id="number" prefWidth="60.0" text="Number" />
+            <TableColumn fx:id="salary" prefWidth="139.20000000000005" text="Weekly Salary" />
+         </columns></TableView>
+   </children>
+</AnchorPane>

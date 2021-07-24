@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="Controllers.mainMenuController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="538.0" prefWidth="406.0">
+            <children>
+                <Button fx:id="loginButton" layoutX="123.0" layoutY="95.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="70.0" prefWidth="159.0" text="Login" />
+                <Button fx:id="searchPlayerButton" layoutX="123.0" layoutY="198.0" mnemonicParsing="false" onAction="#searchPlayerAction" prefHeight="70.0" prefWidth="159.0" text="Search Player" />
+                <Button fx:id="searchClubButton" layoutX="123.0" layoutY="301.0" mnemonicParsing="false" onAction="#searchClubAction" prefHeight="70.0" prefWidth="159.0" text="Search Club" />
+                <Button fx:id="exitButton" layoutX="123.0" layoutY="405.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="70.0" prefWidth="159.0" text="Exit" />
+                <Label alignment="CENTER" layoutX="83.0" layoutY="14.0" prefHeight="64.0" prefWidth="240.0" text="Football Manager" underline="true">
+                    <font>
+                        <Font name="Bell MT" size="27.0" />
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.5355555640326606" centerY="0.4732824500280482" radius="0.6121495594488127">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

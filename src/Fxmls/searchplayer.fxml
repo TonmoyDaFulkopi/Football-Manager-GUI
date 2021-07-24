@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="538.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.searchPlayerController">
+   <children>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="28.0" prefHeight="50.0" prefWidth="134.0" text="Search By">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="playerButton" layoutX="87.0" layoutY="122.0" mnemonicParsing="false" onAction="#playerAction" prefHeight="50.0" prefWidth="232.0" text="Player Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="ccButton" layoutX="87.0" layoutY="192.0" mnemonicParsing="false" onAction="#ccAction" prefHeight="50.0" prefWidth="232.0" text="Club &amp; Country">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="positionButton" layoutX="87.0" layoutY="262.0" mnemonicParsing="false" onAction="#positionAction" prefHeight="50.0" prefWidth="232.0" text="Position">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="salaryButton" layoutX="87.0" layoutY="333.0" mnemonicParsing="false" onAction="#salaryAction" prefHeight="50.0" prefWidth="232.0" text="Salary">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainMenuButton" layoutX="135.0" layoutY="432.0" mnemonicParsing="false" onAction="#mainMenuAction" prefHeight="50.0" prefWidth="134.0" text="Main Menu">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
